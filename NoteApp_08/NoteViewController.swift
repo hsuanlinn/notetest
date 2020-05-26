@@ -47,9 +47,10 @@ class NoteViewController: UIViewController,UIImagePickerControllerDelegate , UIN
                 }
             }
         
+        }
         self.delegate?.didFinishUpdate(note: self.currentNote)
         self.navigationController?.popViewController(animated: true)
-        }
+
     }
     
     @IBAction func camera(_ sender: Any) {
